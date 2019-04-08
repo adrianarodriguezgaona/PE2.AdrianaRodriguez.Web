@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.136
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PE2.AdrianaRodriguez.Web", "PE2.AdrianaRodriguez.Web\PE2.AdrianaRodriguez.Web.csproj", "{4EDF8149-4C98-4501-92C1-0D0AF1118455}"
 EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Tamriel.Domain", "..\..\..\OneDrive\Documenten\HBO5\programmeren 3\pe3\Tamriel.Domain\Tamriel.Domain.csproj", "{7253FBD2-A01B-4EF5-92E4-0E9ED2F7EC1F}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{4EDF8149-4C98-4501-92C1-0D0AF1118455}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{4EDF8149-4C98-4501-92C1-0D0AF1118455}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{4EDF8149-4C98-4501-92C1-0D0AF1118455}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7253FBD2-A01B-4EF5-92E4-0E9ED2F7EC1F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7253FBD2-A01B-4EF5-92E4-0E9ED2F7EC1F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7253FBD2-A01B-4EF5-92E4-0E9ED2F7EC1F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7253FBD2-A01B-4EF5-92E4-0E9ED2F7EC1F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
