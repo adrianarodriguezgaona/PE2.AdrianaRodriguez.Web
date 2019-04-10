@@ -1,6 +1,24 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+@foreach (var province in (IEnumerable<Tamriel.Domain.Province>)ViewBag.ProvinceList)
+{
+    <div>
+        <span>@province.Name</span>
+    </div>
+}
+@foreach (var geography in (IEnumerable<Tamriel.Domain.Geography>)ViewBag.GeographyList)
+{
+    <div>
+        <span>@geography.Name</span>
+    </div>
+}
+@foreach (var race in (IEnumerable<Tamriel.Domain.Race>)ViewBag.RaceList)
+{
+    <div>
+        <span>@race.Name</span>
+    </div>
+}
 
 <div class="text-center">
     <h1 class="display-4">Welcome</h1>
