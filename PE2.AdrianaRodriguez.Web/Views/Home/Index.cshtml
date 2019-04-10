@@ -1,26 +1,71 @@
-﻿@{
+﻿@using Tamriel.Domain
+
+@{
     ViewData["Title"] = "Home Page";
 }
-@foreach (var province in (IEnumerable<Tamriel.Domain.Province>)ViewBag.ProvinceList)
-{
-    <div>
-        <span>@province.Name</span>
-    </div>
-}
-@foreach (var geography in (IEnumerable<Tamriel.Domain.Geography>)ViewBag.GeographyList)
-{
-    <div>
-        <span>@geography.Name</span>
-    </div>
-}
-@foreach (var race in (IEnumerable<Tamriel.Domain.Race>)ViewBag.RaceList)
-{
-    <div>
-        <span>@race.Name</span>
-    </div>
-}
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+<div class="card-container">
+    @foreach (var province in (IEnumerable<Province>)ViewBag.ProvinceList)
+    {
+        <div>
+            <article class="card">
+                <header>
+                    <h3 class="title">@province.Name</h3>
+                    <div class="subtitle">@province.Capital</div>
+                </header>
+                <div class="cardineer">
+                    <div class="card-image">
+                        <img alt= "@province.Image" src="../images/provinces/@province.Image"/>
+                    </div>
+                    <div class="card-properties">
+                        <div class="race-img">
+                            <img alt="@province.OriginatingRace.Image" src="../images/races/@province.OriginatingRace.Image"/>
+                        </div>
+                        <dl>
+                            <dt>Population</dt>
+                            <dd>@province.Population</dd>
+                        </dl>
+                        <dl>
+                            <dt>Area</dt>
+                            <dd>@province.Area Km²</dd>
+                        </dl>
+                        <dl>
+                            <dt>Race</dt>
+                            <dd>@province.OriginatingRace.Name</dd>
+                        </dl>
+                    </div>
+                </div>
+                @foreach(var geoName in province.Geography)
+                {
+                    <ul class="geoUl">
+                        <li title="@geoName.Name">
+                            <a title="@geoName.Name" href="">
+                                <img  alt="@geoName.Image" src="~/images/geography/@geoName.Image" />
+                            </a>
+
+                        </li>
+                    </ul>
+                }
+            </article>
+           
+
+        </div>
+    }
 </div>
+    @foreach (var geography in (IEnumerable<Geography>)ViewBag.GeographyList)
+    {
+        <div>
+            <span>@geography.Name</span>
+        </div>
+    }
+    @foreach (var race in (IEnumerable<Race>)ViewBag.RaceList)
+    {
+        <div>
+            <span>@race.Name</span>
+        </div>
+    }
+
+    <div class="text-center">
+        <h1 class="display-4">Welcome</h1>
+        <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+    </div>
