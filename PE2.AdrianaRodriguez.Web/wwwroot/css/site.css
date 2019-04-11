@@ -9,9 +9,12 @@ a.navbar-brand {
 a {
    display:inline-block;
 }
+h1 {
+    text-align: center;
+}
 .top-header {
-    background-color: #3d7752;
-    color: #7d9184;
+    background-color: #699b72;
+    color: #edf2ea;
     border-radius: 15px;
     position: relative;
 }
@@ -31,20 +34,70 @@ header h1 {
     background-color: #96ceb2;
     font-family: 'Fondamento',cursive;
 }
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+/*article {
+    /*width:46%;
+        float:left;
+        margin: 2%;*/
+    /*flex-basis: 40%;
+}*/
+    section article {
+        width: 30%;
+        float: left;
+        padding: 20px;
+        box-sizing: border-box;
+        flex-basis: 30%;
+        border-style: groove;
+        margin: 5px 0 5px 0;
+        background-color: #86aa9e;
+    }
+article img {
+    width: 90%;
+    padding:5px 5px 5px 5px;
+}
+/*article header {
+    border-style: groove;
+}*/
+.carta {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.divCarta {
+    flex-basis: 40%;
+    float:left;
+}
 .geoUl {
-    list-style:none;
+    list-style: none;
     /*font-size:10rem;*/
-    text-align:center;
-    clear:both;
+    text-align: center;
+    clear: both;
     padding: 5px 0 0 0;
-    margin:auto;
-    width:100%;
-    height:70px;
-       }
+    margin: auto;
+    width: 100%;
+    height: 70px;
+    border-style: groove;
+    border-color: #77c6ac;
+}
 a img {
     width: 60px;
     height: 60px;
-   
+    
+}
+h5{
+    text-align:right;
+}
+ul {
+    display: inline-block;
+}
+
+li {
+    display: inline-block;
 }
 /* Sticky footer styles
 -------------------------------------------------- */
